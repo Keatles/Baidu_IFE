@@ -43,7 +43,7 @@ page.open('https:www.baidu.com/s?wd=' + keyword, function(status) {
 			};
 			result.time = Date.now() - startTime + 'msec';
             result.dataList = dataList;
-            console.log(JSON.stringify(result));
+            console.log(JSON.stringify(result,null,4));
             phantom.exit();
         })
 
